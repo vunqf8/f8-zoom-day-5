@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Interactive</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-form">
+      <h1>Register</h1>
+      <form class="form" autocomplete="off">
+        <div class="form-item required">
+          <label for="name">Display Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your username" minlength="5"
+          />
+        </div>
+        <div class="form-item required">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-item">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" />
+        </div>
+        <div class="form-item required">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password" minlength="6" />
+        </div>
+        <div class="form-item required">
+          <label for="confirm_password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            placeholder="Enter confirm password"
+            minlength="6"
+            />
+        </div>
+        <div class="form-item">
+          <label for="gender">Gender:</label>
+          <div class="form-item-radio">
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Nam</label>
+          </div>
+          <div class="form-item-radio">
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Nữ</label>
+          </div>
+          <div class="form-item-radio">
+            <input type="radio" id="other" name="gender" />
+            <label for="other">Khác</label>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="date">Date or Birth:</label>
+          <input type="date" id="date" placeholder="Enter confirm password" />
+        </div>
+        <div class="form-item">
+          <label for="address">Address:</label>
+          <input type="text" id="address" placeholder="Enter address" />
+        </div>
+        <div class="form-item avt">
+          <label for="avt">Avatar:</label>
+          <label for="avt">
+            <img src="https://avatar.iran.liara.run/public/35" alt="Avatar" />
+          </label>
+          <input type="file" id="avt" />
+        </div>
+        <div class="form-item">
+          <label for="">Communication Preferences:</label>
+          <div class="checkbox-list">
+            <div class="checkbox-item">
+              <input type="checkbox" id="subscribe_to_newsletter" />
+              <label for="subscribe_to_newsletter"
+                >Subscribe to Newsletter</label
+              >
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="receive_promotional_emails" />
+              <label for="receive_promotional_emails"
+                >Receive Promotional Emails</label
+              >
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="get_product_updates" />
+              <label for="get_product_updates">Get Product Updates</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-item">
+            <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
