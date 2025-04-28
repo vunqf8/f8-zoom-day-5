@@ -264,8 +264,8 @@ body {
 }
 
 .container-form .form .form-item button {
+  /* Display & Box Model */
   display: block;
-
   width: 100%;
   padding: 16px 10px;
   margin-top: 10px;
@@ -289,3 +289,106 @@ body {
   );
 }
 /* END: Form Interactive */
+
+/* START: Pricing Table */
+.pricing-table {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e2d8f7, #f3effb, #f7f4fb);
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing-table .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-table .container .box {
+  /* Display & Box Model */
+  display: inline-block;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  
+  /* Color */
+  background: #f5f5f5;
+  
+  /* Text */
+  text-align: center;
+}
+
+.pricing-table .container .box:nth-child(2) {
+  background: #091e71;
+  color: #f5f5f5;
+}
+
+.pricing-table .container .box:nth-child(2) h1::after {
+  content: "Best Value";
+  /* Display & Box Model */
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  
+  /* Color */
+  background: #fff754;
+  color: #c69427;
+
+  /* Text */
+  font-size: 10px;
+  text-align: center;
+  
+}
+
+.pricing-table .container .box h1 {
+  /* Display & Box Model */
+  margin-block: 20px;
+  
+  /*  */
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pricing-table .container .box .price {
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  margin-block: 40px;
+}
+
+.pricing-table .container .box h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pricing-table .container .box .check-list {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pricing-table .container .box .check-list .check-list-item {
+  line-height: 1.5;
+  font-size: 18px;
+  margin-left: 45px;
+}
+
+.pricing-table .container .box .check-list .check-list-item::before {
+  content: "✓";
+  margin-right: 8px;
+}
+
+.pricing-table .container .box button {
+  width: 100%;
+  border-radius: 50px;
+  padding-block: 14px;
+  margin-block: 20px;
+  background: #008dff;
+  color: #f5f5f5;
+  font-size: 16px;
+  border: none;
+}
+
+/* END: Pricing Table */
