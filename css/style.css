@@ -211,7 +211,10 @@ body {
   border: 1px solid #00ff33;
 }
 
-.container-form .form .form-item.required input:invalid {
+.container-form
+  .form
+  .form-item.required
+  input:invalid:not(:placeholder-shown) {
   border: 1px solid #ff1443;
 }
 
@@ -408,3 +411,235 @@ body {
   font-size: 16px;
 }
 /* END: Pricing Table */
+
+/* START: Blog Post */
+.blog {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.blog .heading {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+
+.blog .heading h2 {
+  max-width: 1190px;
+  margin: 0 auto;
+  font-weight: 600;
+  line-height: 3.5;
+}
+
+.blog .main {
+  width: 800px;
+  margin: 24px auto;
+}
+
+.blog .main .title h1 {
+  font-size: 42px;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+.blog .main .title h2 {
+  font-size: 22px;
+  line-height: 28px;
+  margin-block: 24px;
+  color: #6b6b6b;
+}
+
+.blog .main .author .info,
+.blog .main .author .info-time {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.blog .main .author .info img {
+  border-radius: 50%;
+}
+
+.blog .main .author .info span {
+  font-size: 14px;
+  margin-inline: 6px;
+}
+
+.blog .main .author .info span a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.blog .main .author .info span + span {
+  /* Display & Box Model */
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  border-radius: 50%;
+
+  /* Color */
+  background-color: #437aff;
+  color: #f5f5f5;
+
+  /* Text */
+  font-size: 12px;
+}
+
+.blog .main .author .info button {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border: 1px solid #242424;
+  border-radius: 24px;
+  background: transparent;
+}
+
+.blog .main .author .info-time {
+  margin-left: 14px;
+}
+
+.blog .main .author .info-time span:last-child::before {
+  content: "•";
+  margin-inline: 6px;
+}
+
+.blog .main .action {
+  /* Display & Box Model */
+  display: block;
+  height: 50px;
+  margin-top: 32px;
+  padding: 14px 8px;
+  border-top: 1px solid rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
+
+  /* Color */
+  color: #757575;
+
+  /* Text */
+  font-size: 14px;
+}
+
+.blog .main .action .action-left {
+  display: inline;
+  float: left;
+}
+
+.blog .main .action .action-right {
+  display: inline;
+  float: right;
+}
+
+.blog .main .action .action-left span,
+.blog .main .action .action-right span {
+  margin-inline: 6px;
+  cursor: pointer;
+}
+
+.blog .main figure {
+  margin-top: 56px;
+}
+
+.blog .main figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog .main figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.blog .main figure figcaption a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.blog .main p {
+  margin-top: 42px;
+}
+
+.blog .main p::first-letter {
+  font-size: 40px;
+  color: red;
+  float: left;
+  line-height: 1;
+  padding-right: 6px;
+  margin-top: -2px;
+}
+
+.blog .main p:nth-of-type(1)::first-line {
+  background-color: rgb(255, 234, 185);
+}
+
+.blog .main ol {
+  margin-top: 42px;
+  list-style: decimal;
+}
+
+.blog .main ol li {
+  margin: 22px 0 9px 30px;
+}
+
+.blog .main ol li a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+.blog .main p,
+.blog .main ol li {
+  line-height: 1.4;
+}
+
+.blog .main p::selection,
+.blog .main ol li::selection {
+  color: #fffcc0;
+  background: #c69427;
+}
+
+.blog .main h3:not(h1) {
+  color: blue;
+  margin-top: 42px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.blog .main .dot {
+  width: 100%;
+  margin-top: 42px;
+  text-align: center;
+}
+.blog .main .dot span {
+  margin: 0 6px;
+}
+
+.blog .main .dot span:first-child {
+  margin-left: 0;
+}
+
+.blog .main .dot span:last-child {
+  margin-right: 0;
+}
+
+.blog .main blockquote {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.blog .main blockquote::before {
+  content: "\201C";
+  margin-right: 4px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #c69427;
+}
+.blog .main blockquote::after {
+  content: "\201D";
+  margin-left: 4px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #c69427;
+}
+
+/* END: Blog Post */
